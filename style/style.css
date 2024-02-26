@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*-------------------------
+-----------Styling----------
+-------------------------*/
+
+:root {
+  --text: #232020;
+  --navfooterbackground: #fefdec;
+  --sidebaggrund: #f8ffdc;
+  --primary: #d43f38;
+  --secondary: #ec90a1;
+  --accent: #fea22f;
+  --rounded: 12px;
+}
+
+body {
+  font-family: "Bai Jamjuree";
+  font-weight: normal;
+}
+
+/*-------------------------
+-----------defaults--------
+-------------------------*/
+
+.headline {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "chaparral-pro";
+}
+
+.section-headline {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "chaparral-pro" system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.sub-headline {
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-family: "chaparral-pro" system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.navigation-headline {
+  font-size: 1.25rem;
+  font-weight: normal;
+  font-family: "chaparral-pro" system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.base {
+  font-size: 1rem;
+}
+
+.quote {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.note {
+  font-size: 0.875rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1600px;
+}
+
+.btn {
+  text-decoration: none;
+  border-radius: var(--rounded);
+  padding: 1rem 2rem;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--navfooterbackground);
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+/*-------------------------
+-----------header----------
+-------------------------*/
+
+.site-header {
+  background-color: var(--navfooterbackground);
+}
+
+.site-navigation {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.site-logo img {
+  width: 240px;
+  height: 75px;
+}
+
+.site-menu {
+  display: flex;
+  gap: 4rem;
+}
+
+.site-menu .menu-item {
+  list-style: none;
+}
+
+.site-menu .menu-item .menu-link {
+  list-style: none;
+  color: var(--text);
+}
+
+.site-extra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/*-------------------------
+-----------Main------------
+-------------------------*/
+
+/* kasser*/
+
+/*-------------------------
+-----------Footer----------
+-------------------------*/
+
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--navfooterbackground);
+
+}
+
+.site-footer-container {
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    width: 100%;;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.footer-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-box li{
+  list-style: none;
+}
+
+.footer-box li a{
+  color: var(--text);
+  text-decoration: none;
+}
+
+
+.site-footer-some-container{
+  display: flex;
+  gap: 32px;
+}

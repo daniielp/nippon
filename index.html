@@ -1,106 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <title>Nippon måltidskasser</title>
-    <link rel="stylesheet" href="style/style.css" />
-    <script src="script/script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://use.typekit.net/rwo4idp.css">
-  </head>
 
-  <body>
-    <header class="site-header">
-      <nav class="site-navigation container">
-        <a class="site-logo" href="index.html">
-          <img src="img/logo.png" alt="Nippon logo" id="logo" />
-        </a>
-        <ul class="site-menu">
-          <li class="menu-item"><a class="menu-link navigation-headline" href="#">Kasser</a></li>
-          <li class="menu-item"><a class="menu-link navigation-headline" href="#">Sådan fungere det</a></li>
-          <li class="menu-item"><a class="menu-link navigation-headline" href="#">Ugens anbefalinger</a></li>
-          <li class="menu-item"><a class="menu-link navigation-headline" href="#">Shop</a></li>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <title>Nippon måltidskasser</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <script src="scripts/main.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/rwo4idp.css">
+</head>
 
-        <a class="btn btn-primary" href="#">Sammensæt din kasse</a>
+<body>
 
-        <div class="site-extra">
-          <a href="#"><img src="img/icons/present.png" alt="kurve ikon"></a>
-          <a href="#"><img src="img/icons/man.png" alt="profil ikon"></a>
+  <!-- header-->
+  <header class="site-header">
+    <nav class="site-navigation container">
+      <a class="site-logo" href="index.html">
+        <img src="img/logo.png" alt="Nippon logo" id="logo" />
+      </a>
+      <ul class="site-menu">
+        <li class="menu-item"><a class="menu-link navigation-headline" href="kasser.html">Kasser</a></li>
+        <li class="menu-item"><a class="menu-link navigation-headline" href="404-side.html">Sådan fungere det</a></li>
+        <li class="menu-item"><a class="menu-link navigation-headline" href="404-side.html">Ugens anbefalinger</a></li>
+        <li class="menu-item"><a class="menu-link navigation-headline" href="404-side.html">Shop</a></li>
+      </ul>
+
+      <a class="btn btn-primary" href="ugeplan.html">Sammensæt din kasse</a>
+
+      <div class="site-extra">
+        <a href="404-side.html"><img src="img/icons/present.png" alt="kurve ikon"></a>
+        <a href="404-side.html"><img src="img/icons/man.png" alt="profil ikon"></a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- indholdet af siden-->
+
+  <main class="forside-main">
+
+    <!-- Forside banner-->
+    <div class="forside-banner" id="banner">
+      <img src="img/mad/ramen.jpg" alt="Billede af mad" class="forside-banner-billede" id="banner-billede">
+      <div class="forside-banner-indhold container">
+
+        <div class="forside-banner-tekst-med-knap">
+          <p class="headline">Oplev den autentiske smag af Japan lige i dit eget køkken.</p>
+          <a class="btn btn-primary" href="404-side.html" id="CTA-banner">Gå til bestsellers</a>
         </div>
-      </nav>
-    </header>
 
-    <main>
-    </main>
+        <div class="forside-banner-knapper-kasser">
+          <button class="btn btn-banner-aktiv" id="Bestsellers">Bestsellers</button>
+          <button class="btn btn-banner-passiv" id="Traditionel">Traditionel</button>
+          <button class="btn btn-banner-passiv" id="Vegetar">Vegetar</button>
+        </div>
+      </div>
+    </div>
 
-    <footer class="site-footer">
 
-        <section class="site-footer-container container">
-            <p class="sub-headline">Du vil måske også være interesseret i:</p>
+    <!-- Kokkens anbefaling-->
+    <div class="kokkens-anbefaling">
+      <div class="kokkens-anbefaling-wrapper container">
+        <div class="kokkens-anbefaling-beskrivelse">
+          <p class="headline">Kokkens anbefaling</p>
+          <p class="kokkens-anbefaling-tekst base">Vi har samarbejdet med en håndfuld af talentfulde kokke,
+            og influencers til at sammensætte den perfekte måltidskasse til dig.</p>
+        </div>
 
-            <div class="footer-box container">
-                <div>
-                    <ul>
-                        <li><a class="base" href="#"><span class="footer-fed-skrift">Nippon</span></a></li>
-                        <li><a class="base" href="#">Måltidskasser</a></li>
-                        <li><a class="base" href="#">Mad til døren</a></li>
-                        <li><a class="base" href="#">Madplaner</a></li>
-                        <li><a class="base" href="#">Opret bruger</a></li>
-                    </ul>
-                </div>
 
-                <div>
-                    <ul>
-                        <li><a class="base" href="#"><span class="footer-fed-skrift">Bestseller kasse</span></a></li>
-                        <li><a class="base" href="#">Veganer kasse</a></li>
-                        <li><a class="base" href="#">Sund kasse</a></li>
-                        <li><a class="base" href="#">Glutenfri</a></li>
-                        <li><a class="base" href="#">Sammensæt kasse</a></li>
-                    </ul>
-                </div>
+        <div class="kokkens-anbefaling-card-wrapper">
 
-                <div>
-                    <ul>
-                        <li><a class="base" href="#">Jobs</a></li>
-                        <li><a class="base" href="#">Presse</a></li>
-                        <li><a class="base" href="#">Nyhedsbrev</a></li>
-                        <li><a class="base" href="#">Studierabat</a></li>
-                        <li><a class="base" href="#">Hjælpecenter</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <ul>
-                        <li><a class="base" href="#">Samarbejde</a></li>
-                        <li><a class="base" href="#">Partner</a></li>
-                        <li><a class="base" href="#">Influencer</a></li>
-                        <li><a class="base" href="#">Leverandør</a></li>
-                        <li><a class="base" href="#">Cookie policy</a></li>
-                    </ul>
-                </div>
-                
-                    <a class="btn btn-primary" href="#">Tilmeld nyhedsbrev</a>
-                    
-                <div class="site-footer-some-container">
-                    <a href="#" class="some-icons"><img src="img/socials/facebook.png" alt="facebook ikon"></a>
-    
-                    <a href="#"><img src="img/socials/instagram.png" alt="instagram ikon"></a>
-
-                </div>
-
+          <div class="kokkens-anbefaling-card">
+            <div class="kokkens-anbefaling-card-image-wrapper">
+              <img src="img/mad/matcha.jpeg" alt="billede af mad" class="kokkens-anbefaling-card-image">
+              <img src="img/icons/play.png" alt="billede af ur" class="kokkens-anbefaling-play-icon">
             </div>
 
-            <p>	&#169; Nippon.dk, Inc. All rights reserved.</p>
+            <div class="kokkens-anbefaling-card-padding">
+              <p class="base">Bagt laks med svitset grønt</p>
+              <p class="base">Dejlig saftig laks med friske grøntsager i sauce baseret på soja</p>
+              <div class="kokkens-anbefaling-card-beskrivelse">
+                <p class="base">165 kcal </p>
+                <p class="base">|</p>
+                <p class="base">Klimavenlig</p>
+                <p class="base">|</p>
+                <p class="base">Glutenfri</p>
+              </div>
+
+              <div class="kokkens-anbefaling-card-tid">
+                <img src="img/icons/stopwatch.png" alt="billede af ur" class="kokkens-anbefaling-card-icon">
+                <p class="base">25 min</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="kokkens-anbefaling-card">
+            <div class="kokkens-anbefaling-card-image-wrapper">
+              <img src="img/mad/matcha.jpeg" alt="billede af mad" class="kokkens-anbefaling-card-image">
+              <img src="img/icons/play.png" alt="billede af ur" class="kokkens-anbefaling-play-icon">
+            </div>
+
+            <div class="kokkens-anbefaling-card-padding">
+              <p class="base">Bagt laks med svitset grønt</p>
+              <p class="base">Dejlig saftig laks med friske grøntsager i sauce baseret på soja</p>
+              <div class="kokkens-anbefaling-card-beskrivelse">
+                <p class="base">165 kcal </p>
+                <p class="base">|</p>
+                <p class="base">Klimavenlig</p>
+                <p class="base">|</p>
+                <p class="base">Glutenfri</p>
+              </div>
+
+              <div class="kokkens-anbefaling-card-tid">
+                <img src="img/icons/stopwatch.png" alt="billede af ur" class="kokkens-anbefaling-card-icon">
+                <p class="base">25 min</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="kokkens-anbefaling-card">
+            <div class="kokkens-anbefaling-card-image-wrapper">
+              <img src="img/mad/matcha.jpeg" alt="billede af mad" class="kokkens-anbefaling-card-image">
+              <img src="img/icons/play.png" alt="billede af ur" class="kokkens-anbefaling-play-icon">
+            </div>
+
+            <div class="kokkens-anbefaling-card-padding">
+              <p class="base">Bagt laks med svitset grønt</p>
+              <p class="base">Dejlig saftig laks med friske grøntsager i sauce baseret på soja</p>
+              <div class="kokkens-anbefaling-card-beskrivelse">
+                <p class="base">165 kcal </p>
+                <p class="base">|</p>
+                <p class="base">Klimavenlig</p>
+                <p class="base">|</p>
+                <p class="base">Glutenfri</p>
+              </div>
+
+              <div class="kokkens-anbefaling-card-tid">
+                <img src="img/icons/stopwatch.png" alt="billede af ur" class="kokkens-anbefaling-card-icon">
+                <p class="base">25 min</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="kokkens-anbefaling-card">
+            <div class="kokkens-anbefaling-card-image-wrapper">
+              <img src="img/mad/matcha.jpeg" alt="billede af mad" class="kokkens-anbefaling-card-image">
+              <img src="img/icons/play.png" alt="billede af ur" class="kokkens-anbefaling-play-icon">
+            </div>
+
+            <div class="kokkens-anbefaling-card-padding">
+              <p class="base">Bagt laks med svitset grønt</p>
+              <p class="base">Dejlig saftig laks med friske grøntsager i sauce baseret på soja</p>
+              <div class="kokkens-anbefaling-card-beskrivelse">
+                <p class="base">165 kcal </p>
+                <p class="base">|</p>
+                <p class="base">Klimavenlig</p>
+                <p class="base">|</p>
+                <p class="base">Glutenfri</p>
+              </div>
+
+              <div class="kokkens-anbefaling-card-tid">
+                <img src="img/icons/stopwatch.png" alt="billede af ur" class="kokkens-anbefaling-card-icon">
+                <p class="base">25 min</p>
+              </div>
+            </div>
+
+          </div>
+
+
 
 
         </div>
-        </section>
-            
-    </footer>
-  </body>
+
+        <div class="kokkens-anbefaling-btn-wrapper">
+          <a class="btn btn-primary" href="404-side.html">Bestsellers</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Hvad siger folk?-->
+    <div class="siger-folk">
+      <div class="siger-folk-wrapper container">
+        <div class="siger-folk-card1">
+          <p class="section-headline">Hvad siger folk om os?</p>
+          <p class="base">
+            "Nippon leverer en autentisk japansk kulinarisk oplevelse direkte til døren! Friske ingredienser, nøje
+            udvalgte opskrifter og enkelhed i leveringen gør Nippon til den perfekte måltidskasse for enhver, der ønsker
+            at udforske den vidunderlige verden af japansk madlavning."</p>
+        </div>
+
+        <div class="siger-folk-card2">
+          <img src="img/masser_mandemad.png" alt="billede af kokke" class="siger-folk-billede">
+          <div class="siger-folk-border">
+            <p class="quote">"Nippon's japanske måltidskasse imponerer med autentiske smagsoplevelser og nøje udvalgte råvarer. En kulinarisk rejse, der bringer japansk madkunst hjem til dig!"</p>
+            <p class="sub-headline">@masser_mandemad</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- Om nippon-->
+    <div class="forside-om-nippon">
+      <div class="forside-om-nippon-wrapper container">
+        <div class="siger-folk-card1">
+          <p class="section-headline">Om nippon</p>
+          <p class="base">Nippon's mission er at fremme kendskabet til det japanske køkken. Vi vil gerne vise og dele de
+            mange nuancer af smag, krydderier og råvarer, man kan opleve, samt den store diversitet de asiatiske lande
+            har.</p>
+        </div>
+
+        <img src="img/logo.png" alt="billede af Nippons logo">
+      </div>
+    </div>
+
+
+  </main>
+
+
+  <!-- footer-->
+
+  <footer class="site-footer">
+
+    <section class="site-footer-container container">
+      <p class="sub-headline">Du vil måske også være interesseret i:</p>
+
+      <div class="footer-box container">
+        <div>
+          <ul>
+            <li><a class="base" href="#"><span class="footer-fed-skrift">Nippon</span></a></li>
+            <li><a class="base" href="#">Måltidskasser</a></li>
+            <li><a class="base" href="#">Mad til døren</a></li>
+            <li><a class="base" href="#">Madplaner</a></li>
+            <li><a class="base" href="#">Opret bruger</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li><a class="base" href="#"><span class="footer-fed-skrift">Bestseller kasse</span></a></li>
+            <li><a class="base" href="#">Veganer kasse</a></li>
+            <li><a class="base" href="#">Sund kasse</a></li>
+            <li><a class="base" href="#">Glutenfri</a></li>
+            <li><a class="base" href="#">Sammensæt kasse</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li><a class="base" href="#">Jobs</a></li>
+            <li><a class="base" href="#">Presse</a></li>
+            <li><a class="base" href="#">Nyhedsbrev</a></li>
+            <li><a class="base" href="#">Studierabat</a></li>
+            <li><a class="base" href="#">Hjælpecenter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li><a class="base" href="#">Samarbejde</a></li>
+            <li><a class="base" href="#">Partner</a></li>
+            <li><a class="base" href="#">Influencer</a></li>
+            <li><a class="base" href="#">Leverandør</a></li>
+            <li><a class="base" href="#">Cookie policy</a></li>
+          </ul>
+        </div>
+
+        <p class="btn btn-primary" id="tilmeld-nyhedsbrev">Tilmeld nyhedsbrev</p>
+
+        <div class="site-footer-some-container">
+          <a href="#" class="some-icons"><img src="img/socials/facebook.png" alt="facebook ikon"></a>
+          <a href="#" class="some-icons"><img src="img/socials/instagram.png" alt="instagram ikon"></a>
+
+        </div>
+
+      </div>
+
+      <p> &#169; Nippon.dk, Inc. All rights reserved.</p>
+
+
+      </div>
+    </section>
+
+  </footer>
+
+  <!--nyhedsbrev-->
+  <div id="nyhedsbrev">
+    <p class="section-headline">Nippons nyhedsbrev</p>
+    <p class="base nyheds-tekst">Få at vide når der kommer nye retter og vær med på spænende konkurrencer</p>
+    <p class="sub-headline">Email adresse</p>
+    <input type="text" placeholder="simon767b@gmail.com" class="quote">
+    <div class="nyhedsbrev-knap">
+      <a class="btn btn-primary" href="#">Tilmeld nyhedsbrev</a>
+    </div>
+
+    <img src="img/icons/close.png" alt="billede af kryds" class="luk-knap" id="luk">
+  </div>
+
+</body>
+
 </html>

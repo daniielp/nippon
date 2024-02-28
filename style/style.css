@@ -12,10 +12,14 @@
   --text: #232020;
   --navfooterbackground: #fefdec;
   --sidebaggrund: #f8ffdc;
-  --primary: #d43f38;
   --secondary: #ec90a1;
   --accent: #fea22f;
+  --accent-light: #FBD59F;
   --rounded: 12px;
+  --primary: #d43f38;
+  --primary-light: #DF716C;
+  --accent-btn-dark: #795220;
+  --spacing-y: 4rem 0;
 }
 
 body {
@@ -59,15 +63,18 @@ body {
 
 .base {
   font-size: 1rem;
+  font-family: "Bai Jamjuree";
 }
 
 .quote {
   font-size: 1rem;
   font-style: italic;
+  font-family: "Bai Jamjuree";
 }
 
 .note {
   font-size: 0.875rem;
+  font-family: "Bai Jamjuree";
 }
 
 a {
@@ -82,6 +89,9 @@ a {
   text-decoration: none;
   border-radius: var(--rounded);
   padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -140,6 +150,1023 @@ a {
 -----------Main------------
 -------------------------*/
 
+/*-------forside--------*/
+
+.forside-main{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: var(--sidebaggrund);
+}
+
+/*banner*/
+.forside-banner{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.forside-banner-billede{
+  width: 100%;
+  object-fit: cover;
+  height: 600px;
+
+
+}
+
+.forside-banner-indhold{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 160px;
+  padding: 40px 0px;
+  width: 100%;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*banner tekst*/
+.forside-banner-indhold p{
+color: #FFFFFF;
+width: 40%;
+}
+
+.forside-banner-tekst-med-knap{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.forside-banner-knapper-kasser{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 24px;
+}
+
+.btn-banner-aktiv {
+  background-color: var(--sidebaggrund);
+  color: var(--text);
+  opacity: 1;
+  border: none;
+}
+
+.btn-banner-passiv {
+  background-color: var(--sidebaggrund);
+  color: var(--text);
+
+  opacity: 0.6;
+  border: none;
+}
+
+
+/*kokkens anbefaling*/
+.kokkens-anbefaling{
+  display: flex;
+  justify-content: center;
+}
+
+.kokkens-anbefaling-wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+}
+
+.kokkens-anbefaling-beskrivelse{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.kokkens-anbefaling-tekst{
+  width: 500px;
+}
+
+/*kokkens anbefalinger video kort*/
+.kokkens-anbefaling-card-wrapper{
+display: flex;
+justify-content: space-between;
+gap: 2rem;
+}
+.kokkens-anbefaling-card{
+  background-color: #FFE5C5;
+  width: 22vw;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.kokkens-anbefaling-card-padding{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 8px 8px;
+}
+
+.kokkens-anbefaling-card-beskrivelse{
+  display: flex;
+  gap: 8px;
+}
+
+.kokkens-anbefaling-card-tid{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.kokkens-anbefaling-card-image-wrapper{
+  position: relative;
+}
+
+.kokkens-anbefaling-card-image{
+  width: 100%;
+  border-radius: 12px 12px 0px 0px;
+  object-fit: cover;
+}
+
+
+
+.kokkens-anbefaling-play-icon{
+  position: absolute;
+  width: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+}
+
+.kokkens-anbefaling-card-icon{
+  width: 30px;
+  
+}
+
+/*kokkens anbefalinger video kort slut*/
+
+.kokkens-anbefaling-btn-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*Hvad siger folk om os?*/
+.siger-folk{
+  background-color: #FBD59F;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.siger-folk-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0px;
+}
+
+.siger-folk-card1{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  gap: 16px;
+}
+
+.siger-folk-card2{
+  display: flex;
+  align-items: center;
+  width: 45%;
+  gap: 16px;
+}
+
+.siger-folk-billede{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.siger-folk-border{
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid black;
+  padding-left: 16px;
+  gap: 16px;
+}
+
+/*Om nippon*/
+.forside-om-nippon{
+  display: flex;
+  justify-content: center;
+
+}
+
+.forside-om-nippon-wrapper{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 60px 0px;
+}
+
+.forside-om-nippon-wrapper img{
+  height: 100%;
+}
+
+/*404-side*/
+
+.ikkeLavet-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--sidebaggrund);
+  height: 80vh;
+  position: relative;
+}
+
+.ikkeLavet-main div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  z-index: 1000;
+  opacity: 0;
+  color: var(--sidebaggrund);
+  overflow: hidden;
+
+  animation: 1s all ease-out;
+  animation-fill-mode: both;
+  animation-name: dukOp;
+  animation-delay: 7s;
+}
+
+.soya {
+  position: absolute;
+  top: 73%;
+  left: 78%;
+  transform: translate(-50%, -50%);
+
+  width: 100px;
+
+  animation: 1s all ease-out;
+  animation-fill-mode: both;
+  animation-name: vælt;
+
+}
+
+@keyframes vælt{
+  0%{rotate: 0deg;}
+  100%{rotate: 90deg;}
+}
+
+.soya-sort{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 50px; 
+  height: 50px;
+
+  border-radius: 50%;
+
+  background-color: var(--text);
+  animation: 6s all ease-out;
+  animation-fill-mode: both;
+  animation-name: blivStor;
+  animation-delay: 1s;
+
+}
+
+@keyframes blivStor{
+  0%{width: 25px; height: 50px;border-radius: 50% 50% 50% 50%; opacity: 0;}
+  15%{width: 50px; height: 50px;border-radius: 50% 50% 0% 50%; opacity: 1;}
+  25%{width: 150px; height: 150px;border-radius: 50% 50% 0 50%;}
+  50%{width: 450px; height: 350px;border-radius: 50% 50% 0 50%}
+  75%{width: 100%; height: 100%; border-radius: 50% 50% 0 50%}
+  100%{width: 100%; height: 100%; border-radius: 0;}
+}
+
+@keyframes dukOp{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+/* kasser*/
+
+.main {
+  background-color: var(--sidebaggrund);
+  padding-block: 3rem;
+}
+
+.kasser_info {
+  margin-inline: 4rem;
+}
+
+.kasser-underline {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.bestsellers {
+  width: 250px;
+  height: 175px;
+  border-radius: 10px;
+}
+
+.traditionelle {
+  width: 250px;
+  height: 175px;
+}
+
+.vegetar {
+  width: 250px;
+  height: 175px;
+}
+
+.kasser {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 5rem;
+  margin-inline: 4rem;
+}
+
+.btntilføj {
+  text-decoration: none;
+  border-radius: var(--rounded);
+  background-color: var(--primary);
+  padding: 12px;
+  color: var(--navfooterbackground);
+  display: inline-block;
+  margin-left: 175px;
+}
+
+.btnkasse {
+  text-decoration: none;
+  border-radius: var(--rounded);
+  background-color: var(--sidebaggrund);
+  padding: 20px;
+  color: #232020;
+}
+
+.btnkurv {
+  text-decoration: none;
+  border-radius: var(--rounded);
+  background-color: var(--primary);
+  padding: 20px;
+  color: var(--navfooterbackground);
+}
+
+.kasseknapper {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  border: 0;
+  background-color: var(--sidebaggrund);
+}
+
+.kasserførste {
+  display: flex;
+  width: 100%;
+  gap: 5rem;
+  margin-inline: 4rem;
+}
+
+.kasseranden {
+  display: flex;
+  width: 100%;
+  gap: 5rem;
+  margin-inline: 4rem;
+  margin-block: 2rem;
+}
+
+.kasse1 {
+  background-color: var(--accent-light); 
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.kasse2 {
+  background-color: var(--accent-light);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+a .kasse2 {
+  color: var(--text);
+}
+
+.kasse3 {
+  background-color: var(--accent-light);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.kasse4 {
+  background-color: var(--accent-light);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.kasse5 {
+  background-color: var(--accent-light);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.kasse6 {
+  background-color: var(--accent-light);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.kasse7 {
+  background-color: var(--accent-light);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.kasse8 {
+  background-color: var(--accent-light);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.kasse9 {
+  background-color: var(--accent-light);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.kasse10 {
+  background-color: var(--accent-light);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* kasser*/
+
+
+/* ---- Opskrift side ---- */
+
+/* topbox */
+
+.opskrift-topbox {
+  width: 100%;
+  height: auto;
+  background-color: var(--sidebaggrund);
+  display: flex;
+}
+
+.opskrift-img{
+  width: 50%;
+}
+
+.opskrift-right-box {
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin: 4rem;
+}
+
+.opskrift-backbtn {
+  width: 100%;
+}
+
+.opskrift-back-btn {
+  float: right;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.opskrift-right-box a {
+  color: var(--primary);
+}
+
+
+.opskrift-wayfinder {
+  display: flex;
+  gap: 1rem;
+}
+
+.opskrift-wayfinder a {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+div .opskrift-active{
+  text-decoration: none;
+}
+
+.opskrift-tid {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.opskrift-pref {
+  display: flex;
+  gap: 1rem;
+}
+
+.opskrift-icon {
+  width: 4rem
+}
+
+.opskrift-icon-tid {
+  width: 2rem;
+}
+
+.opskrift-icon-bg {
+  background-color: var(--accent);
+  padding: 1px;
+  border-radius: 50px;
+  border: #232020 solid 2px;
+}
+
+/* --- Bar i midten --- */
+
+.opskrift-midter-bar {
+  width: 50%;
+  height: 6rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  left: 25%;
+  margin-top: -3rem;
+  background-color: var(--accent);
+}
+
+#heartBtn {
+  cursor: pointer;
+}
+
+.like-icon {
+  width: 3rem;
+}
+
+.opskrift_selectors_bar {
+background-color: var(--navfooterbackground);
+display: flex;
+align-items: center;
+justify-content: space-around;
+width: 12rem;
+height: 40px;
+border-radius: 12px;
+}
+
+.opskrift_selectors_input {
+  width: 1.5rem;
+  border: none;
+}
+
+.opskrift-pris {
+  display: flex;
+  justify-content: center;
+  width: 12rem;
+}
+
+.opskrift_selectors_btn {
+  background-color: transparent;
+  border: none;
+  width: 2rem;
+}
+
+.opskrift_selectors_btn:hover {
+  scale: 200%;
+}
+
+
+/* Frame opskrift */
+
+.opskrift-frame {
+  width: 100%;
+  display: flex;
+}
+
+/* --- Venstre side panel --- */
+
+.opskrift-left-box {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--sidebaggrund);
+  padding: 6rem;
+  gap: 1rem;
+}
+
+.ingrediencer-tabel {
+  width: 80%;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.ingrediencer-tabel ul {
+  list-style-type: none;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.linje-mellem-tekst {
+  width: auto;
+  height: 1px;
+  background-color: black;
+}
+
+/* --- Højre side panel --- */
+
+.opskrift-right-lower-box {
+  width: 70%;
+  padding: 6rem;
+  background-color: var(--accent-light);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.opskrift-næring-del {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rem;
+}
+
+.opskrift-næring-tekst {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.opskrift-næringsindhold-indhold {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.opskrift-næringskort {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+
+/*-------------------------
+-----------ugeplan--------
+-------------------------*/
+
+.ugeplan {
+  background-color: var(--sidebaggrund);
+}
+
+.ugeplan-topbar {
+  margin: 0 auto;
+  padding: var(--spacing-y);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ugeplan-togglebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .25rem;
+  background-color: var(--accent);
+  border-radius: var(--rounded);
+  color: var(--navfooterbackground)
+}
+
+.ugeplan-togglebar a {
+  color: inherit
+}
+
+.btn-ugeplan {
+  background-color: var(--accent-btn-dark);
+  color: var(--navfooterbackground);
+}
+
+.ugeplan-hero {
+  padding: var(--spacing-y);
+  text-align: center;
+}
+
+.ugeplan-selector {
+  display: flex;
+  flex-direction: column;
+}
+
+.ugeplan-week {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-y);
+  gap: 1rem;
+}
+
+.ugeplan-week .placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ugeplan-box {
+  width: 120px;
+  height: 120px;
+  border-radius: var(--rounded);
+  background-color: #D9D9D9;
+}
+
+.ugeplan-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--rounded);
+  background-color: #D9D9D9;
+}
+
+.ugeplan-meals {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+  background-color: var(--primary-light);
+}
+
+.ugeplan-meals-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ugeplan-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.ugeplan-card {
+  border-radius: var(--rounded);
+  background-color: var(--accent-light);
+}
+
+.ugeplan-card-top {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.ugeplan-card-top .cover-image {
+  border-radius: var(--rounded) var(--rounded) 0 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ugeplan-card-top .top-left {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.ugeplan-card-top .bottom-right {
+  position: absolute;
+  display: flex;
+  gap: .5rem;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.ugeplan-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: 1rem;
+}
+
+.ugeplan-card-title {
+  font-weight: bold;
+}
+
+.ugeplan-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ugeplan-card-time {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.ugeplan-placeholder {
+  width: 100%;
+  height: 200px;
+  background-color: #D9D9D9;
+}
+
+.ugeplan-btn {
+  background-color: #ffe5c580;
+  color: var(--text)
+}
+
+.ugeplan-btn:hover {
+  background-color: #ffe5c5;
+  color: var(--text)
+}
+
+.ugeplan-btn img {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 768px) {
+  .ugeplan-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+.hidden {
+  visibility: hidden;
+}
+
+
+/*Simpel side 1*/
+
+.simpel_side{
+  background-color: var(--sidebaggrund);
+}
+
+.simpel_side_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.simpel_side_1_container {
+  background-color: var(--accent-light);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: var(--rounded);
+  padding-block: 2rem;
+  margin-block-end: 2rem;
+  gap: 1rem;
+}
+
+.simpel_selectors_container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-block: 2rem 1rem;
+}
+
+.simpel_selectors_input {
+  border: none;
+  text-align: center;
+  background-color: transparent;
+  width: 2rem;
+}
+
+.simpel_selectors_bar {
+  background-color: var(--accent);
+  border-radius: var(--rounded);
+}
+
+.simpel_selectors_btn {
+  border: none;
+  background-color: var(--accent);
+  padding: 0.5rem 1.5rem;
+  border-radius: var(--rounded);
+  cursor: pointer;
+}
+
+.simpel_selectors_btn:hover {
+  filter: brightness(95%);
+  transition: ease-in-out 300ms;
+}
+
+.simpel_side_1_information {
+  background-color: var(--navfooterbackground);
+  width: 85%;
+  padding: 2rem;
+  border-radius: var(--rounded);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.simpel_side_1_information_rows {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.br_line {
+  width: 100%;
+}
+
+.simpel_rows_total {
+  font-weight: bold;
+}
+
+.simpel_side_1_btn {
+  background-color: var(--accent);
+  border-radius: var(--rounded);
+  border: none;
+  padding: 1rem 10rem;
+  margin-block-start: 1rem;
+  cursor: pointer;
+}
+
+.simpel_side_1_btn a {
+  color: var(--text);
+  width: 100%;
+  height: 100%;
+}
+
+.simpel_side_1_btn:hover {
+  filter: brightness(95%);
+  transition: ease-in-out 300ms;
+}
+
+
+/*Simpel side 2 - samme gridopstilling som ugeplan*/
+
+.simpel_side_2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--sidebaggrund);
+}
+
+.simpel_side_2_contianer {
+  width: 90%;
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*Bestillings knap*/
+.simpel_side_2_bestil {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--accent);
+  width: fit-content;
+  padding: 1rem 2rem;
+  gap: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--rounded);
+  margin-block: 2rem;
+
+  position: sticky;
+  bottom: 10%;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+
+
+
 /* kasser*/
 
 /*-------------------------
@@ -183,3 +1210,63 @@ a {
   display: flex;
   gap: 32px;
 }
+
+/*-------------------------
+--------nyhedsbrev---------
+-------------------------*/
+
+#nyhedsbrev{
+  position: fixed;
+  right: -1000px;
+  bottom: 16px;
+  
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #FFFFFF;
+  padding: 16px;
+  border-radius: 12px;
+
+  animation: 1s all ease-out;
+  animation-fill-mode: both;
+}
+
+.nyhedsbrev-knap{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nyheds-tekst{
+  width: 400px;
+}
+
+#nyhedsbrev input{
+  width: 500px;
+  background-color: var(--navfooterbackground);
+  padding: 24px 16px;
+  border-radius: 12px;
+}
+
+.luk-knap{
+  width: 3rem;
+
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  cursor: pointer;
+
+}
+
+@keyframes slideIn{
+  0%{right: -1000px;}
+  100%{right: 16px;}
+}
+
+@keyframes slideOut{
+  0%{right: 16px;}
+  100%{right: -1000px;}
+}
+

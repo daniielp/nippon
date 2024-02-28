@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <title>Nippon måltidskasser</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <script src="scripts/simpel_side_1.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/rwo4idp.css">
+</head>
+
+<body>
+  <!-- header-->
+  <header class="site-header">
+    <nav class="site-navigation container">
+      <a class="site-logo" href="index.html">
+        <img src="img/logo.png" alt="Nippon logo" id="logo" />
+      </a>
+      <ul class="site-menu">
+        <li class="menu-item"><a class="menu-link navigation-headline" href="kasser.html">Kasser</a></li>
+        <li class="menu-item"><a class="menu-link navigation-headline" href="404-side.html">Sådan fungere det</a></li>
+        <li class="menu-item"><a class="menu-link navigation-headline" href="404-side.html">Ugens anbefalinger</a></li>
+        <li class="menu-item"><a class="menu-link navigation-headline" href="404-side.html">Shop</a></li>
+      </ul>
+
+      <a class="btn btn-primary" href="ugeplan.html">Sammensæt din kasse</a>
+
+      <div class="site-extra">
+        <a href="404-side.html"><img src="img/icons/present.png" alt="kurve ikon"></a>
+        <a href="404-side.html"><img src="img/icons/man.png" alt="profil ikon"></a>
+      </div>
+    </nav>
+  </header>
+
+
+  <main class="simpel_side">
+    <!--Ugeplan og simpel toggle-->
+    <div class="ugeplan-topbar container">
+      <div class="ugeplan-togglebar">
+        <a class="btn" href="ugeplan.html">Ugeplan</a>
+        <a class="btn btn-ugeplan" href="simpel_side_1.html">Simpel</a>
+      </div>
+    </div>
+
+    <!--Simpel side 1-->
+    <div class="simpel_side_content">
+      <div class="simpel_side_1_container">
+        <p class="headline">Vælg antal portioner og måltider</p>
+        <p class="quote">Du kan ændre dit valg til hver en tid</p>
+        <div class="simpel_selectors_container">
+          <div class="simpel_selectors">
+            <p class="base">Antal portioner</p>
+            <div class="simpel_selectors_bar">
+              <button class="base simpel_selectors_btn" id="simpel_portioner_minus">-</button>
+              <input type="text" value="1" class="simpel_selectors_input base" id="simpel_selectors_portioner">
+              <button class="base simpel_selectors_btn" id="simpel_portioner_plus">+</button>
+            </div>
+          </div>
+          <div class="simpel_selectors">
+            <p class="base">Antal måltider</p>
+            <div class="simpel_selectors_bar">
+              <button class="base simpel_selectors_btn" id="simpel_moltider_minus">-</button>
+              <input type="text" value="1" class="simpel_selectors_input base" id="simpel_selectors_moltider">
+              <button class="base simpel_selectors_btn" id="simpel_moltider_plus">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="simpel_side_1_information">
+          <div class="simpel_side_1_information_rows">
+            <p class="base">Antal måltider</p>
+            <div>
+              <span id="simpel_moltider_total">1</span> måltider
+            </div>
+          </div>
+          <div class="simpel_side_1_information_rows">
+            <p class="base">Antal portioner</p>
+            <div>
+              <span id="simpel_portioner_total">1</span> portioner
+            </div>
+          </div>
+          <div class="simpel_side_1_information_rows">
+            <p class="base">Pris pr. portion</p>
+            <div>
+              <input type="text" value="40" class="simpel_selectors_input base" id="simpel_vejledende_pris"
+                disabled>kr*</input>
+            </div>
+          </div>
+          <div class="simpel_side_1_information_rows">
+            <p class="base">Levering</p>
+            <div>
+              <input type="text" value="0" class="simpel_selectors_input base" id="simpel_levering" disabled>kr*</input>
+            </div>
+          </div>
+          <img class="br_line" src="img/br_line.png" alt="break line">
+          <div class="simpel_side_1_information_rows simpel_rows_total">
+            <p class="base">Total</p>
+            <div>
+              <span id="simpel_total">40</span> kr*
+            </div>
+          </div>
+        </div>
+        <a href="simpel_side_2.html"> <button class="simpel_side_1_btn base">Vælg</button></a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+
+    <section class="site-footer-container container">
+      <p class="sub-headline">Du vil måske også være interesseret i:</p>
+
+      <div class="footer-box container">
+        <div>
+          <ul>
+            <li><a class="base" href="#"><span class="footer-fed-skrift">Nippon</span></a></li>
+            <li><a class="base" href="#">Måltidskasser</a></li>
+            <li><a class="base" href="#">Mad til døren</a></li>
+            <li><a class="base" href="#">Madplaner</a></li>
+            <li><a class="base" href="#">Opret bruger</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li><a class="base" href="#"><span class="footer-fed-skrift">Bestseller kasse</span></a></li>
+            <li><a class="base" href="#">Veganer kasse</a></li>
+            <li><a class="base" href="#">Sund kasse</a></li>
+            <li><a class="base" href="#">Glutenfri</a></li>
+            <li><a class="base" href="#">Sammensæt kasse</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li><a class="base" href="#">Jobs</a></li>
+            <li><a class="base" href="#">Presse</a></li>
+            <li><a class="base" href="#">Nyhedsbrev</a></li>
+            <li><a class="base" href="#">Studierabat</a></li>
+            <li><a class="base" href="#">Hjælpecenter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li><a class="base" href="#">Samarbejde</a></li>
+            <li><a class="base" href="#">Partner</a></li>
+            <li><a class="base" href="#">Influencer</a></li>
+            <li><a class="base" href="#">Leverandør</a></li>
+            <li><a class="base" href="#">Cookie policy</a></li>
+          </ul>
+        </div>
+
+        <a class="btn btn-primary" href="#">Tilmeld nyhedsbrev</a>
+
+        <div class="site-footer-some-container">
+          <a href="#" class="some-icons"><img src="img/socials/facebook.png" alt="facebook ikon"></a>
+
+          <a href="#"><img src="img/socials/instagram.png" alt="instagram ikon"></a>
+
+        </div>
+
+      </div>
+
+      <p> &#169; Nippon.dk, Inc. All rights reserved.</p>
+
+
+      </div>
+    </section>
+
+  </footer>
+</body>
+
+</html>

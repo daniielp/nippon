@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <title>Nippon måltidskasser</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <script src="scripts/opskrift.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/rwo4idp.css">
+</head>
+
+<body>
+  <!-- header-->
+  <header class="site-header">
+    <nav class="site-navigation container">
+      <a class="site-logo" href="index.html">
+        <img src="img/logo.png" alt="Nippon logo" id="logo" />
+      </a>
+      <ul class="site-menu">
+        <li class="menu-item"><a class="menu-link navigation-headline" href="kasser.html">Kasser</a></li>
+        <li class="menu-item"><a class="menu-link navigation-headline" href="404-side.html">Sådan fungere det</a></li>
+        <li class="menu-item"><a class="menu-link navigation-headline" href="404-side.html">Ugens anbefalinger</a></li>
+        <li class="menu-item"><a class="menu-link navigation-headline" href="404-side.html">Shop</a></li>
+      </ul>
+
+      <a class="btn btn-primary" href="ugeplan.html">Sammensæt din kasse</a>
+
+      <div class="site-extra">
+        <a href="404-side.html"><img src="img/icons/present.png" alt="kurve ikon"></a>
+        <a href="404-side.html"><img src="img/icons/man.png" alt="profil ikon"></a>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="opskrift-topbox">
+
+      <img src="img/mad/ramen.jpg" alt="Ramenbowl" class="opskrift-img">
+
+
+      <div class="opskrift-right-box">
+        <div class="opskrift-backbtn">
+          <button onclick="history.back()" class="opskrift-back-btn base">&larr; Gå tilbage</button>
+        </div>
+
+        <div class="opskrift-wayfinder">
+          <a href="#">Nippon</a>
+          <p>></p>
+          <a href="#">Kasser</a>
+          <p>></p>
+          <a href="#">Traditonal</a>
+          <p>></p>
+          <a href="#" class="opskrift-active">Beef Ramen</a>
+        </div>
+
+        <h1 class="headline">Beef Ramen</h1>
+        <p class="opskrift-tid"><img src="img/icons/stopwatch_7498271.png" alt="klokke icon" class="opskrift-icon-tid">
+          45 min</p>
+        <p>Beef ramen er en fantastisk asiatisk suppe med nudler og oksekød. Ramen består af en kraftig bouillon med
+          smagsgivere som fx miso og soja, nudler og toppings. Suppen er her lavet på oksebouillon, frisk ingefær og
+          miso - og toppings består af nudler, stegte svampe, bønnespirer, flanksteak og frisk koriander.</p>
+        <div class="opskrift-pref">
+          <img src="img/icons/fish_2872436.png" alt="" class="opskrift-icon opskrift-icon-bg">
+          <img src="img/icons/eggs_2503808.png" alt="" class="opskrift-icon opskrift-icon-bg">
+          <img src="img/icons/meat_1046769.png" alt="" class="opskrift-icon opskrift-icon-bg">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="opskrift-midter-bar">
+      <!-- like button -->
+      <div id="heartBtn">
+        <img src="img/icons/heart-tomt.png" alt="Hjerte icon" class="like-icon" id="heartImage">
+      </div>
+      <!-- Tilføjelse af portioner -->
+      <div class="opskrift_selectors_bar">
+        <button class="base opskrift_selectors_btn" id="opskrift_minus">-</button>
+        <input type="text" value="1" max="9" class="opskrift_selectors_input base"
+          id="opskrift_selectors_moltider">Portioner
+        <button class="base opskrift_selectors_btn" id="opskrift_plus">+</button>
+      </div>
+      <!-- Prisen -->
+      <div class="section-headline opskrift-pris"><span id="totalPrice">25</span> ,-</div>
+      <!-- Tilføjelses knap -->
+      <a href="#" class="btn-primary btn">Tilføj til kurv</a>
+    </div>
+
+    <div class="opskrift-frame">
+
+      <!-- Venstre box med ingrediencer -->
+      <div class="opskrift-left-box">
+        <!-- Første del  -->
+        <h1 class="headline">Ingredienser</h1>
+        <!-- Ramen -->
+        <h2 class="sub-headline">Ramen</h2>
+        <div class="ingrediencer-tabel">
+          <ul>
+            <li>20 g smør</li>
+            <div class="linje-mellem-tekst"></div>
+            <li>200 g Champigoner</li>
+            <div class="linje-mellem-tekst"></div>
+            <li>Forårsløg</li>
+            <div class="linje-mellem-tekst"></div>
+            <li>4 fintsnittede fed hvidløg</li>
+            <div class="linje-mellem-tekst"></div>
+            <li>1½ liter oksebouillon</li>
+            <div class="linje-mellem-tekst"></div>
+            <li>2 spsk fint revet frisk ingefær</li>
+            <div class="linje-mellem-tekst"></div>
+            <li>2 spsk sojasauce</li>
+            <div class="linje-mellem-tekst"></div>
+            <li>2 spsk sesamolie</li>
+            <div class="linje-mellem-tekst"></div>
+            <li>1 spsk mørk miso</li>
+            <div class="linje-mellem-tekst"></div>
+            <li>1 spsk rørsukker</li>
+            <div class="linje-mellem-tekst"></div>
+            <li>1 tsk tørrede chiliflager</li>
+          </ul>
+        </div>
+
+        <!-- Flankesteak -->
+        <h2 class="sub-headline">Flankesteak</h2>
+        <div class="ingrediencer-tabel">
+          <ul>
+            <li>20 g smør</li>
+            <div class="linje-mellem-tekst"></div>
+            <li>400 g flanksteak</li>
+            <div class="linje-mellem-tekst"></div>
+            <li>1 tsk salt</li>
+            <div class="linje-mellem-tekst"></div>
+            <li>Friskkværnet peber</li>
+          </ul>
+        </div>
+
+        <!-- Toppings -->
+        <h2 class="sub-headline">Topping</h2>
+        <div class="ingrediencer-tabel">
+          <ul>
+            <li>200 g tørrede ægnudler</li>
+            <div class="linje-mellem-tekst"></div>
+            <li>2 dl bønnespirer</li>
+            <div class="linje-mellem-tekst"></div>
+            <li>2 blødkogte æg</li>
+            <div class="linje-mellem-tekst"></div>
+            <li>4 spsk ristede løg</li>
+            <div class="linje-mellem-tekst"></div>
+            <li>Frisk koriander</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Slut på venstre side -->
+
+      <!-- Højre side -->
+      <div class="opskrift-right-lower-box">
+
+        <!-- Første del  -->
+
+        <h1 class="headline">Sådan gør du</h1>
+
+        <!-- Ramen -->
+
+        <h2 class="sub-headline">Ramen</h2>
+        <div class="opskrifter-sgd-tabel">
+          <ol>
+            <li>Lad smørret blive gyldent i en stor gryde. Steg champignon ved jævn varme i ca. 2 min. - rør af og til.
+            </li>
+            <li>Skær forårsløgene i tynde ringe. Steg den hvide del af forårsløgene og hvidløg sammen med champignon i
+              ca. 1 min. - gem den grønne del til pynt.</li>
+            <li>Tilsæt de øvrige ingredienser og giv det et opkog.</li>
+          </ol>
+        </div>
+
+        <!-- Flankesteak -->
+
+        <h2 class="sub-headline">Flankesteak</h2>
+        <div class="opskrifter-sgd-tabel">
+          <ol>
+            <li>Lad smøret blive gyldent i en pande. Steg steaken ca. 4 min. på hver side og drys med salt og peber.
+            </li>
+            <li>Lad den hvile i ca. 5 min. og skær den i skiver.</li>
+          </ol>
+        </div>
+
+        <!-- Toppings -->
+
+        <h2 class="sub-headline">Topping og anretning</h2>
+        <div class="opskrifter-sgd-tabel">
+          <ol>
+            <li>Tilbered imens ægnudlerne efter anvisning på emballagen. Lad dem dryppe af i en sigte.</li>
+            <li>Halver de blødkogte æg og anret dem sammen ægnudler, bønnespirer, ristede løg, koriander og de grønne
+              foråsrløgtoppe i fire skåle.</li>
+            <li>Fordel kødskiverne over fyldet g hæld den kogende suppe over. Server straks.</li>
+          </ol>
+        </div>
+
+
+        <!-- Næringindhold -->
+
+        <div class="opskrift-næring-del">
+          <div class="opskrift-næring-tekst">
+            <h2 class="section-headline">Næringsindhold</h2>
+            <b class="base">Energiindhold for hele retten:</b>
+            <p>9619 kJ / 2299 kcal</p>
+            <b class="base">Næringsindhold pr. 100g</b>
+            <p>357 kJ / 85 kcal</p>
+          </div>
+          <div class="opskrift-næringskort">
+            <p class="sub-headline">NÆRINGSINDHOLD PR. 100G</p>
+
+            <div class="opskrift-næringsindhold-indhold">
+              <b class="base">Fiber:</b>
+              <p class="base">0.4 g</p>
+            </div>
+
+            <div class="linje-mellem-tekst"></div>
+
+            <div class="opskrift-næringsindhold-indhold">
+              <b class="base">Protein:</b>
+              <p class="base">5.1 g</p>
+            </div>
+
+            <div class="linje-mellem-tekst"></div>
+
+            <div class="opskrift-næringsindhold-indhold">
+              <b class="base">Kylhydrat:</b>
+              <p class="base">7.1 g</p>
+            </div>
+
+            <div class="linje-mellem-tekst"></div>
+
+            <div class="opskrift-næringsindhold-indhold">
+              <b class="base">Fedt:</b>
+              <p class="base">4 g</p>
+            </div>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+  <footer class="site-footer">
+
+    <section class="site-footer-container container">
+      <p class="sub-headline">Du vil måske også være interesseret i:</p>
+
+      <div class="footer-box container">
+        <div>
+          <ul>
+            <li><a class="base" href="#"><span class="footer-fed-skrift">Nippon</span></a></li>
+            <li><a class="base" href="#">Måltidskasser</a></li>
+            <li><a class="base" href="#">Mad til døren</a></li>
+            <li><a class="base" href="#">Madplaner</a></li>
+            <li><a class="base" href="#">Opret bruger</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li><a class="base" href="#"><span class="footer-fed-skrift">Bestseller kasse</span></a></li>
+            <li><a class="base" href="#">Veganer kasse</a></li>
+            <li><a class="base" href="#">Sund kasse</a></li>
+            <li><a class="base" href="#">Glutenfri</a></li>
+            <li><a class="base" href="#">Sammensæt kasse</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li><a class="base" href="#">Jobs</a></li>
+            <li><a class="base" href="#">Presse</a></li>
+            <li><a class="base" href="#">Nyhedsbrev</a></li>
+            <li><a class="base" href="#">Studierabat</a></li>
+            <li><a class="base" href="#">Hjælpecenter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li><a class="base" href="#">Samarbejde</a></li>
+            <li><a class="base" href="#">Partner</a></li>
+            <li><a class="base" href="#">Influencer</a></li>
+            <li><a class="base" href="#">Leverandør</a></li>
+            <li><a class="base" href="#">Cookie policy</a></li>
+          </ul>
+        </div>
+
+        <a class="btn btn-primary" href="#">Tilmeld nyhedsbrev</a>
+
+        <div class="site-footer-some-container">
+          <a href="#" class="some-icons"><img src="img/socials/facebook.png" alt="facebook ikon"></a>
+
+          <a href="#"><img src="img/socials/instagram.png" alt="instagram ikon"></a>
+
+        </div>
+
+      </div>
+
+      <p> &#169; Nippon.dk, Inc. All rights reserved.</p>
+
+
+      </div>
+    </section>
+
+  </footer>
+</body>
+
+</html>

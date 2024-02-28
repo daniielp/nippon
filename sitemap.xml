@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+  <url>
+    <loc>https://nippon.raskstudio.dk/index.html</loc>
+    <lastmod>2024-02-28T07:41:00+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://nippon.raskstudio.dk/kasser.html</loc>
+    <lastmod>2024-02-28T07:41:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://nippon.raskstudio.dk/404-side.html</loc>
+    <lastmod>2024-02-28T07:41:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://nippon.raskstudio.dk/ugeplan.html</loc>
+    <lastmod>2024-02-28T07:41:01+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://nippon.raskstudio.dk/traditionelle.html</loc>
+    <lastmod>2024-02-28T07:41:01+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://nippon.raskstudio.dk/simpel_side_1.html</loc>
+    <lastmod>2024-02-28T07:41:00+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://nippon.raskstudio.dk/opskrift.html</loc>
+    <lastmod>2024-02-28T07:41:00+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://nippon.raskstudio.dk/simpel_side_2.html</loc>
+    <lastmod>2024-02-28T07:41:00+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+
+
+</urlset>
